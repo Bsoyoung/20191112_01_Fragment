@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.a20191112_01_fragment.R
+import kotlinx.android.synthetic.main.fragment_first.*
 
 class FirstFragment : Fragment() {
 
@@ -17,4 +18,12 @@ class FirstFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_first,container,false)
     }
 
+    //액티비티 위에 얹어졌을 때 실행되는 fun
+    //실질적으로 fragment 입장에서는 onCreate나 마찬가지.
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+
+        firstFragTxt.text = "프래그먼트에서 글자 바꿈"
+
+    }
 }

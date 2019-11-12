@@ -13,6 +13,13 @@
         android:gravity="center"
         android:background="#FF0000">
 
+        <TextView
+            android:id="@+id/firstTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "30sp"
+            android:textColor="#FFFFFF"
+            android:text="첫번 째 분할 영역" />
 
 
     </LinearLayout>
@@ -24,6 +31,13 @@
         android:gravity="center"
         android:background="#0000FF">
 
+        <TextView
+            android:id="@+id/secondTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize = "30sp"
+            android:textColor="#FFFFFF"
+            android:text="두번 째 분할 영역" />
 
 
     </LinearLayout>
